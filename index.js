@@ -35,10 +35,13 @@ app.post("/compiler", async (req, res) => {
 	console.log(options);
 
   try {
-    const response = await axios.request(options);
-    return res.status(200).json({
-      data: { result: response.data },
-    });
+    // const response = await axios.request(options);
+    // return res.status(200).json({
+    //   data: { result: response.data },
+    // });
+	   return res.status(200).json({
+    		data: { result: "testing" },
+    	   });
 	  console.log(response.data);
   } catch (error) {
     console.log(error);
