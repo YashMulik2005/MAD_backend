@@ -19,10 +19,10 @@ app.post("/compiler", async (req, res) => {
     method: "POST",
     url: "https://online-code-compiler.p.rapidapi.com/v1/",
     headers: {
-      "content-type": "application/json",
-      "X-RapidAPI-Key": "639e388a10msh3ccd60adff600b9p1f174djsn211b87c4474a",
-      "X-RapidAPI-Host": "online-code-compiler.p.rapidapi.com",
-    },
+		  'x-rapidapi-key': '37865f47e8msh2c05a16552d6bd0p19b7e9jsn82286e02a65f',
+		  'x-rapidapi-host': 'online-code-compiler.p.rapidapi.com',
+		  'Content-Type': 'application/json'
+	  },
     data: {
       language: requestdata.language,
       version: "latest",
