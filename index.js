@@ -36,10 +36,11 @@ app.post("/compiler", async (req, res) => {
     return res.status(200).json({
       data: { result: response.data },
     });
+	  console.log(response.data);
   } catch (error) {
     console.log(error);
     return res.status(400).json({
-      data: { err: error },
+      data: { err: error, key:"37865f47e8msh2c05a16552d6bd0p19b7e9jsn82286e02a65f" },
     });
   }
 });
