@@ -31,6 +31,8 @@ app.post("/compiler", async (req, res) => {
     },
   };
 
+	console.log(options);
+
   try {
     const response = await axios.request(options);
     return res.status(200).json({
